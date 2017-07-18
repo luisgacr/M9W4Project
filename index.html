@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>M9W4Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="M9W4Project">
+  <meta name="author" content="Luis Caro">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>M9W4Project</h1>
+    <h2>Colombian Peso exchange rate (vs US Dollar)</h2>
+    <p>Luis Caro<br/>Director Finac</p>
+  </hgroup>
+    <a href="https://github.com/luisgacr/M9W4Project/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Purpose</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The purpose of the website is:</p>
+
+<ul>
+<li>Display the Colombian Peso (COP) exchange rate (vs USD) in table
+
+<ul>
+<li>Plot the exchange rates vs the dates</li>
+<li>Plot the daily rate differences. This can be done in two ways:
+-- Display the differences of the absolute rates
+-- Display the differences of the logarithms of the rates.</li>
+</ul></li>
+</ul>
+
+<p>The user can select:</p>
+
+<ul>
+<li>The range in dates of the rates that will be displayed
+
+<ul>
+<li>The type of rate difference that will be displayed (absolute rate or rate logarithm)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Instructions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are two date fields:</p>
+
+<ul>
+<li>The initial plot date (date of the first rate and difference)
+-- The minimum date allowed for this field is 1991-11-28, and the maximun value is 2017-03-28
+
+<ul>
+<li>The final plot data (date of last rate and difference)
+-- The minimum date allowed for this field is 1991-12-01, and the maximun value is 2017-03-28</li>
+</ul></li>
+</ul>
+
+<p>There is a selector where the user can select the type of difference to display:</p>
+
+<ul>
+<li>Absolute
+
+<ul>
+<li>Logarithm</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Instructions (continued)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In the bottom of the side bar, there is a button <Create plots>. The user must press this button to display the plots in the folowing cases:</p>
+
+<ul>
+<li>When the website is initiated
+
+<ul>
+<li>Every time any date is changed</li>
+</ul></li>
+</ul>
+
+<p>The differences chart is updated automatically when the user selects a new type of difference.</p>
+
+<p>The plots were built using &quot;plotly&quot;; therefore all the provided by this type of plot is avialable to the user</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The rates are stored in a mongoDB database, hosted in mlab.com. Everytime the website is initiated, the rates are downloaded. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Purpose'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Instructions'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Instructions (continued)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Data'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
