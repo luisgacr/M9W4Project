@@ -28,6 +28,7 @@ The user can select:
   - The range in dates of the rates that will be displayed
 - The type of rate difference that will be displayed (absolute rate or rate logarithm)
 
+
 ---
 ## Instructions
   
